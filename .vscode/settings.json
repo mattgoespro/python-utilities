@@ -70,6 +70,6 @@
   "search.exclude": {
     ".git": true
   },
-  "workbench.colorTheme": "🌚 DarkCode++",
+  "workbench.colorTheme": "Monokai Night",
   "workbench.iconTheme": "material-icon-theme"
 }
