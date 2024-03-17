@@ -1,0 +1,75 @@
+{
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[pip-requirements]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "files.eol": "\n"
+  },
+  "black-formatter.args": ["--line-length", "150"],
+  "black-formatter.importStrategy": "fromEnvironment",
+  "black-formatter.interpreter": [".\\.venv\\\\Scripts\\\\python.exe"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.fixAll.pylint": "always",
+    "source.organizeImports": "always"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "files.eol": "\n",
+  "files.exclude": {
+    ".git": true
+    // ".venv": true
+  },
+  "files.watcherExclude": {
+    ".git": true
+    // ".venv": true
+  },
+  "gitProjectManager.openInNewWindow": true,
+  "pylint.args": ["--rcfile=.\\pylintrc.cfg"],
+  "pylint.importStrategy": "fromEnvironment",
+  "pylint.interpreter": [".\\.venv\\Scripts\\python.exe"],
+  "pylint.severity": {
+    "convention": "Warning",
+    "error": "Error",
+    "fatal": "Error",
+    "info": "Information",
+    "refactor": "Warning",
+    "warning": "Warning"
+  },
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportUnusedClass": "warning"
+  },
+  "python.analysis.exclude": [".venv"],
+  "python.analysis.fixAll": ["source.convertImportFormat"],
+  "python.analysis.include": ["${workspaceFolder}\\src"],
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.typeCheckingMode": "strict",
+  "python.createEnvironment.contentButton": "show",
+  "python.createEnvironment.trigger": "prompt",
+  "python.envFile": "",
+  "python.languageServer": "Pylance",
+  "python.missingPackage.severity": "Error",
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "pythonIndent.keepHangingBracketOnLine": true,
+  "pythonIndent.trimLinesWithOnlyWhitespace": true,
+  "pythonIndent.useTabOnHangingIndent": true,
+  "search.exclude": {
+    ".git": true
+  },
+  "workbench.colorTheme": "🌚 DarkCode++",
+  "workbench.iconTheme": "material-icon-theme"
+}

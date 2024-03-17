@@ -1,0 +1,4 @@
+pylint
+argparse
+pdf2docx
+rich-argparse
