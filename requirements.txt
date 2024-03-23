@@ -1,4 +1,6 @@
 pylint
 argparse
 pdf2docx
+argparse
 rich-argparse
+black

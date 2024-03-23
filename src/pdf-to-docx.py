@@ -3,8 +3,9 @@ import sys
 from argparse import ArgumentParser
 
 from pdf2docx import Converter
+from rich_argparse import ArgumentDefaultsRichHelpFormatter
 
-parser = ArgumentParser()
+parser = ArgumentParser(formatter_class=ArgumentDefaultsRichHelpFormatter)
 parser.add_argument("-p", "--pdf", type=str, help="Path to the PDF file")
 parser.add_argument("-o", "--output", type=str, help="Path to the DOCX file")
 parser.add_argument("-d", "--directory", type=str, required=False, help="Path to the directory to save the DOCX file")
@@ -17,6 +18,14 @@ output_directory = args.directory
 
 if not output_directory:
     output_directory = os.environ.get("HOME")
+
+    if not output_directory:
+        print("\n\nCannot set default output directory: 'HOME' environment variable not set")
+        sys.exit(1)
+
+    print(f"Using default output directory: {output_directory}")
+elif not os.path.exists(output_directory):
+    print(f"\n\nOutput directory does not exist: {output_directory}")
 
 if not pdf_file:
     parser.print_usage()

@@ -1,10 +1,10 @@
 {
-  "[json]": {
+  "[pip-requirements]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true
   },
-  "[pip-requirements]": {
+  "[properties]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true
@@ -12,10 +12,10 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "files.eol": "\n"
+    "editor.formatOnSave": true
   },
   "black-formatter.args": ["--line-length", "150"],
+  "black-formatter.path": [".\\.venv\\Scripts\\black.exe"],
   "black-formatter.importStrategy": "fromEnvironment",
   "black-formatter.interpreter": [".\\.venv\\\\Scripts\\\\python.exe"],
   "editor.codeActionsOnSave": {
@@ -24,52 +24,52 @@
     "source.organizeImports": "always"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "explorer.confirmDragAndDrop": false,
-  "files.eol": "\n",
+  // "editor.formatOnPaste": true,
+  // "editor.formatOnSave": true,
   "files.exclude": {
     ".git": true
     // ".venv": true
   },
+  "python.analysis.importFormat": "absolute",
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.extraPaths": ["${workspaceFolder}\\src"],
   "files.watcherExclude": {
     ".git": true
     // ".venv": true
   },
-  "gitProjectManager.openInNewWindow": true,
   "pylint.args": ["--rcfile=.\\pylintrc.cfg"],
   "pylint.importStrategy": "fromEnvironment",
   "pylint.interpreter": [".\\.venv\\Scripts\\python.exe"],
-  "pylint.severity": {
-    "convention": "Warning",
-    "error": "Error",
-    "fatal": "Error",
-    "info": "Information",
-    "refactor": "Warning",
-    "warning": "Warning"
-  },
+  // "pylint.severity": {
+  //   "convention": "Warning",
+  //   "error": "Error",
+  //   "fatal": "Error",
+  //   "info": "Information",
+  //   "refactor": "Warning",
+  //   "warning": "Warning"
+  // },
   "python.analysis.autoFormatStrings": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.diagnosticSeverityOverrides": {
     "reportUnusedClass": "warning"
   },
-  "python.analysis.exclude": [".venv"],
   "python.analysis.fixAll": ["source.convertImportFormat"],
   "python.analysis.include": ["${workspaceFolder}\\src"],
   "python.analysis.inlayHints.functionReturnTypes": true,
-  "python.analysis.typeCheckingMode": "strict",
-  "python.createEnvironment.contentButton": "show",
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.typeCheckingMode": "standard",
   "python.createEnvironment.trigger": "prompt",
-  "python.envFile": "",
-  "python.languageServer": "Pylance",
-  "python.missingPackage.severity": "Error",
+  "python.missingPackage.severity": "Warning",
   "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.terminal.activateEnvironment": true,
   "pythonIndent.keepHangingBracketOnLine": true,
   "pythonIndent.trimLinesWithOnlyWhitespace": true,
   "pythonIndent.useTabOnHangingIndent": true,
   "search.exclude": {
     ".git": true
   },
-  "workbench.colorTheme": "Monokai Night",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "material-icon-theme",
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.enablePytestSupport": false
 }
