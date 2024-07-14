@@ -14,46 +14,45 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true
   },
-  "black-formatter.args": ["--line-length", "150"],
-  "black-formatter.path": [".\\.venv\\Scripts\\black.exe"],
+  "black-formatter.args": ["--line-length", "100"],
   "black-formatter.importStrategy": "fromEnvironment",
-  "black-formatter.interpreter": [".\\.venv\\\\Scripts\\\\python.exe"],
+  "black-formatter.interpreter": [".\\.venv\\Scripts\\python.exe"],
+  "black-formatter.path": [".\\.venv\\Scripts\\black.exe"],
   "editor.codeActionsOnSave": {
+    "source.convertImportFormat": "always",
     "source.fixAll": "always",
-    "source.fixAll.pylint": "always",
+    "source.fixAll.pylance": "always",
     "source.organizeImports": "always"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // "editor.formatOnPaste": true,
-  // "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
   "files.exclude": {
     ".git": true
-    // ".venv": true
   },
-  "python.analysis.importFormat": "absolute",
-  "python.analysis.completeFunctionParens": true,
-  "python.analysis.extraPaths": ["${workspaceFolder}\\src"],
   "files.watcherExclude": {
-    ".git": true
-    // ".venv": true
+    ".git": true,
+    ".venv": true
   },
   "pylint.args": ["--rcfile=.\\pylintrc.cfg"],
   "pylint.importStrategy": "fromEnvironment",
   "pylint.interpreter": [".\\.venv\\Scripts\\python.exe"],
-  // "pylint.severity": {
-  //   "convention": "Warning",
-  //   "error": "Error",
-  //   "fatal": "Error",
-  //   "info": "Information",
-  //   "refactor": "Warning",
-  //   "warning": "Warning"
-  // },
+  "pylint.severity": {
+    "convention": "Warning",
+    "error": "Error",
+    "fatal": "Error",
+    "info": "Information",
+    "refactor": "Warning",
+    "warning": "Warning"
+  },
   "python.analysis.autoFormatStrings": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.diagnosticSeverityOverrides": {
     "reportUnusedClass": "warning"
   },
+  "python.analysis.extraPaths": ["${workspaceFolder}\\src"],
   "python.analysis.fixAll": ["source.convertImportFormat"],
+  "python.analysis.importFormat": "absolute",
   "python.analysis.include": ["${workspaceFolder}\\src"],
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.variableTypes": true,
@@ -68,8 +67,13 @@
   "search.exclude": {
     ".git": true
   },
-  "workbench.colorTheme": "Monokai",
-  "workbench.iconTheme": "material-icon-theme",
-  "python.analysis.diagnosticMode": "workspace",
-  "python.analysis.enablePytestSupport": false
+  "terminal.integrated.defaultProfile.windows": "bash-python-env",
+  "terminal.integrated.profiles.windows": {
+    "bash-python-env": {
+      "color": "terminal.ansiCyan",
+      "source": "Git Bash"
+    }
+  },
+  "workbench.colorTheme": "Monokai Night",
+  "workbench.iconTheme": "material-icon-theme"
 }

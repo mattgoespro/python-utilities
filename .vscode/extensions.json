@@ -2,7 +2,6 @@
   "recommendations": [
     "ms-python.black-formatter",
     "felipecaputo.git-project-manager",
-    "github.copilot",
     "github.copilot-chat",
     "ms-python.isort",
     "pkief.material-icon-theme",
@@ -10,10 +9,15 @@
     "esbenp.prettier-vscode",
     "ms-python.vscode-pylance",
     "ms-python.pylint",
-    "ms-python.python",
     "richie5um2.vscode-sort-json",
     "kevinrose.vsc-python-indent",
     "usernamehw.errorlens",
-    "donjayamanne.python-environment-manager"
+    "donjayamanne.python-environment-manager",
+    "petersteiner.pip-installer",
+    "github.copilot",
+    "ms-python.python",
+    "ms-python.debugpy",
+    "slightc.pip-manager",
+    "markosth09.color-picker"
   ]
 }
